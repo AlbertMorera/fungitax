@@ -12,6 +12,7 @@ remotes::install_github("AlbertMorera/fungitax")
 ```
 
 ### **Basic usage:**
+The main function of fungitax is get_fungal_name()
 #### - *Update fungal names*
 If you provide a vector of fungal species names, the function will return their updated names if an update exists.
 ```{r}
