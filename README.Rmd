@@ -9,3 +9,12 @@ You can install the latest version of **fungitax** from GitHub using the `remote
 
 ```r
 remotes::install_github("AlbertMorera/fungitax")
+```
+
+### 1. **Basic usage: Update fungal names**
+If you provide a vector of fungal species names, the function will return their updated names if an update exists.
+
+```{r}
+species <- c("Amanita deliciosa", "Lactarius vinosus", "Geastrum triplex")
+get_fungal_name(species)
+```
