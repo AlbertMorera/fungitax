@@ -1,4 +1,4 @@
-# **fungitax**: A R package for fungal taxonomy updates
+# fungitax: A R package for fungal taxonomy updates
 
 ## Description
 The **fungitax** package provides functions to update scientific names of fungi based on the data available from Index Fungorum. It allows users to get the most current name of a fungus species by querying this online database.
@@ -12,7 +12,7 @@ remotes::install_github("AlbertMorera/fungitax")
 ```
 
 ### **Basic usage:**
-The main function of fungitax is get_fungal_name()
+The main function of fungitax is get_fungal_name(). In this version, the function is a bit slow, so I recommend not making a very long query or splitting the problem to get an idea of where it is at.
 #### - *Update fungal names*
 If you provide a vector of fungal species names, the function will return their updated names if an update exists.
 ```{r}
