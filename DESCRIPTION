@@ -1,0 +1,17 @@
+Package: fungitax
+Type: Package
+Title: A package for updating and resolving fungal names based on Index Fungorum
+Version: 0.1.0
+Author: Albert Morera <morera.marra@gmail.com>
+Maintainer: Albert Morera <morera.marra@gmail.com>
+Description: This package allows for the retrieval and updating of fungal names from Index Fungorum, including synonyms and taxonomic classification.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    taxize,
+    rvest,
+    dplyr,
+    stringr,
+    tibble
+Roxygen: list(markdown = TRUE)

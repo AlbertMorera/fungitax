@@ -1,0 +1,3 @@
+# NAMESPACE
+export(get_fungal_name)
+
