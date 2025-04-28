@@ -1,4 +1,4 @@
-# fungitax: An R package for fungal taxonomy updates
+# fungitax: An R package for updating and resolving fungal names based on Index Fungorum
 
 
 
@@ -65,4 +65,4 @@ for(sp in species) {
 
 
 ## Cite this package
-Morera, A. (2025). fungitax: An R package for updating fungal names. GitHub repository URL. https://github.com/AlbertMorera/fungitax
+Morera, A. (2025). fungitax: An R package for updating and resolving fungal names based on Index Fungorum. GitHub repository URL. https://github.com/AlbertMorera/fungitax

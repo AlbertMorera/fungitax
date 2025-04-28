@@ -15,7 +15,7 @@ remotes::install_github("AlbertMorera/fungitax")
 ```
 
 ### **Basic usage:**
-The main function of `fungitax` is `get_fungal_name()`. In this version, the function is a bit slow, so I recommend not making a very long query or splitting the problem to get an idea of where it is at.
+The main function of `fungitax` is `get_fungal_name()`. In this version, the function is a bit slow, so I recommend not making a very long query or splitting the problem to get an idea of where it is at. To update 500 names on my computer it takes 15'.
 #### - *Update fungal names*
 If you provide a vector of fungal species names, the function will return their updated names if an update exists.
 ```{r}
@@ -40,7 +40,7 @@ get_fungal_name(species_2)
 You can also work with data.frame or tibbles:
 ```{r}
 tibble(species = species) %>%
-  mutate(new.name = get_fungal)
+  mutate(new.name = get_fungal_name(species))
 ```
 
 #### - *Extracting information from the result*

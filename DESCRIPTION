@@ -1,6 +1,6 @@
 Package: fungitax
 Type: Package
-Title: A package for updating and resolving fungal names based on Index Fungorum
+Title: fungitax: An R package for updating and resolving fungal names based on Index Fungorum
 Version: 0.1.0
 Author: Albert Morera <morera.marra@gmail.com>
 Maintainer: Albert Morera <morera.marra@gmail.com>
