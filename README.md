@@ -1,4 +1,4 @@
-# fungitax: A R package for fungal taxonomy updates
+# fungitax: An R package for fungal taxonomy updates
 
 
 
@@ -15,7 +15,7 @@ remotes::install_github("AlbertMorera/fungitax")
 ```
 
 ### **Basic usage:**
-The main function of `fungitax` is `get_fungal_name()`. In this version, the function is a bit slow, so I recommend not making a very long query or splitting the problem to get an idea of where it is at.
+The main function of `fungitax` is `get_fungal_name()`. In this version, the function is a bit slow, so I recommend not making a very long query or splitting the problem to get an idea of where it is at. Updating 500 scientific names takes 15' on my computer.
 #### - *Update fungal names*
 If you provide a vector of fungal species names, the function will return their updated names if an update exists.
 ```{r}
@@ -30,7 +30,7 @@ get_fungal_name(species, add_info = TRUE)
 ```
 
 #### - *Handling incorrect names or genera*
-If the name is misspelled or only the genus is provided, the function will return NA. The package is case-insensitive, so both uppercase and lowercase inputs are accepted.
+If the name is misspelled or only the genus is provided, the function will return `NA`. The package is case-insensitive, so both uppercase and lowercase inputs are accepted.
 ```{r}
 species_2 <- c("Amanita delicios", "LACTARIUS VINOSUS", NA, "Paxillus", "Gaestrum")
 get_fungal_name(species_2)
@@ -40,7 +40,7 @@ get_fungal_name(species_2)
 You can also work with data.frame or tibbles:
 ```{r}
 tibble(species = species) %>%
-  mutate(new.name = get_fungal)
+  mutate(new.name = get_fungal_name(species))
 ```
 
 #### - *Extracting information from the result*
@@ -65,4 +65,4 @@ for(sp in species) {
 
 
 ## Cite this package
-Morera, A. (2025). fungitax: A package for updating fungal names based on Index Fungorum. GitHub repository URL. https://github.com/AlbertMorera/fungitax
+Morera, A. (2025). fungitax: An R package for updating fungal names. GitHub repository URL. https://github.com/AlbertMorera/fungitax
